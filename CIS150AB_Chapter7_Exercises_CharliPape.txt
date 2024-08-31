@@ -1,0 +1,37 @@
+class Square
+	//Property Variables
+	private num side
+	
+	public void setSide(num s)
+		if (s > 0) then
+			side = s
+			perimeter = 4 * s
+			area = s * s
+		endIf
+	return
+	
+	public num getSide()
+	return side	
+	
+	public num getPerimeter()
+	return perimeter
+	
+	public num getArea()
+	return area	
+endClass
+
+main()
+	Square s1
+	Square s2
+	
+	s1.setSide(10)
+	s2.setSide(5)
+	
+	output "Square 1's side length is " + s1.getSide() + ", it's perimeter is " + s1.getPerimeter() + ", and it's area is " + s1.getArea()
+	
+	output "Square 1's side length is " + s1.getSide() + ", it's perimeter is " + s1.getPerimeter() + ", and it's area is " + s1.getArea()
+	
+	return
+endClass
+
+	

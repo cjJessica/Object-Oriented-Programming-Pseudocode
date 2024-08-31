@@ -1,0 +1,78 @@
+class Automobile
+	//Property variables
+	private string carId
+	private string make
+	private string model
+	private string color
+
+	//SET methods
+	public void setCarId(string cId)
+		carId = cId
+	return
+	
+	public void setMake(string ma)
+		make = ma
+	return
+	
+	public void setModel(string mo)
+		model = mo
+	return
+
+	public void setColor(string c)
+		color = c
+	return	
+	
+	//GET methods
+	
+	//public string getCarId()
+	//return carId
+	
+	//public string getMake()
+	//return make
+	
+	//public string getModel()
+	//return model
+
+	//public string getColor()
+	//return color
+	
+	public string displayDetails()
+		output "VIN: " + getCardId()
+		output "Make: " + getMake()
+		output "Model: " + getmodel()
+		output "Color: " + getcolorId()
+	return
+endClass
+
+
+class Convertible inheritsFrom Automobile
+	//Property variables
+	private boolean topStatus
+	
+	//Set method
+	public void setTopStatus(boolean top)
+		topStatus = top
+	return	
+	
+	//Get method
+	public boolean getTopStatus()
+	return topStatus
+	
+endClass
+
+main()
+	Automobile auto1
+	Convertible conv1
+
+	auto1.setCarId("123")
+	auto1.setMake("Toyota")
+	auto1.setModel("Prius Prime")
+	auto1.setColor("Blue")
+
+	conv1.setCarId("4567")
+	conv1.setMake("BMW")
+	conv1.setModel("4 Series Convertible")
+	conv1.setColor("Red")
+	conv1.topStatus(True)
+
+return
